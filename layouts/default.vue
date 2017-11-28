@@ -1,5 +1,8 @@
 <template>
   <div>
+    <a class="site-nav" href="/">
+      <h1 class="site-title"> NUXTENT </h1>
+    </a>
     <nuxt/>
   </div>
 </template>
@@ -48,5 +51,32 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.site-nav
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 2rem 0;
+  text-decoration: none;
+  margin-bottom: 3rem
+}
+
+.site-title
+{
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  display: block;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #35495e;
+  letter-spacing: 1px;
+  margin-left: 1.5rem;
+}
+
+.site-logo
+{
+  width: 200px;
+  height: 200px
 }
 </style>

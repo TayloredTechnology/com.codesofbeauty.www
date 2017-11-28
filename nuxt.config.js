@@ -3,7 +3,7 @@ module.exports = {
 	 ** Headers of the page
 	 */
 	head: {
-		title: 'com.imortalnutrition.www',
+		title: 'imortal nutrition',
 		meta: [ {
 				charset: 'utf-8'
 			},
@@ -48,10 +48,57 @@ module.exports = {
 		}
 	},
 	modules: [
-		// "nuxt-netlify-cms"
-		"nuxtent"
+		'nuxtent',
+		'nuxt-netlify-cms'
 	],
 	netlifyCms: {
-		adminPath: "secure"
+		cmsConfig: {
+			backend: {
+				name: 'git-gateway',
+				branch: 'master'
+			},
+			publish_mode: 'editorial_workflow',
+			media_folder: 'content/images',
+			collections: [ {
+				name: 'blog',
+				label: 'Blog',
+				folder: 'content',
+				create: true,
+				slug: '{{slug}}',
+				fields: [ {
+						label: 'Layout',
+						name: 'layout',
+						widget: 'hidden',
+						default: 'blog'
+					},
+					{
+						label: 'Title',
+						name: 'title',
+						widget: 'string'
+					},
+					{
+						label: 'Publish Date',
+						name: 'date',
+						widget: 'datetime'
+					},
+					{
+						label: 'Featured Image',
+						name: 'thumbnail',
+						widget: 'image'
+					},
+					{
+						label: 'Rating (scale of 1-5)',
+						name: 'rating',
+						widget: 'number'
+					},
+					{
+						label: 'Body',
+						name: 'body',
+						widget: 'markdown'
+					}
+				]
+			} ]
+		},
+		adminPath: 'cms'
 	}
 }

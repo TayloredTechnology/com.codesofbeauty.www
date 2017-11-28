@@ -8,7 +8,12 @@
       <h2 class="subtitle">
         Nuxt.js project
       </h2>
+      <h2 class="slogan">
+        Seamlessly use content files in your Nuxt.js sites.
+      </h2>
       <div class="links">
+        <nuxt-link to="/hello-world" class="button--green">See Your First Post</nuxt-link>
+        <a href="https://github.com/nuxt-community/content-module" target="_blank" class="button--grey">Learn More on Github</a>
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
@@ -33,6 +38,15 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.slogan
+{
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
 }
 
 .title {

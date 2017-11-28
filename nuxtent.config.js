@@ -1,12 +1,10 @@
 module.exports = {
-	// content/HelloWorld.md --> posts/hello-world
 	content: {
-		page: '/posts/_slug',
 		permalink: ':slug',
-		isPost: false,
-		generate: [
-			'get',
-			'getAll'
-		]
+		page: '/_content',
+		generate: [ // for static build
+			'get', 'getAll'
+		],
+		isPost: false
 	}
 }
