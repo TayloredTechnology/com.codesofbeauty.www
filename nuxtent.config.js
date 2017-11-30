@@ -5,21 +5,17 @@ module.exports = {
 	content: [
 		[ 'wholesome/recipes', {
 			page: '/wholesome/recipes/_section/_slug',
-			permalink: ':section/:slug',
+			permalink: '/wholesome/recipes/:section/:slug',
 			isPost: false,
 			anchorLevel: 3,
-			generate: [ // for static build
-				'get', 'getAll'
-			]
+			generate: [ 'get' ]
 		} ],
 		[ 'itstarts', {
 			page: '/itstarts/_section/_slug',
-			permalink: ':section/:slug',
+			permalink: '/itstarts/:section/:slug',
 			isPost: false,
 			anchorLevel: 3,
-			generate: [ // for static build
-				'get', 'getAll'
-			]
+			generate: [ 'get' ]
 		} ]
 		// [ '', {
 		// 	permalink: '/:slug',

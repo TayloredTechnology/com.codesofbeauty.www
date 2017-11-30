@@ -8,8 +8,8 @@
 
 <script>
 export default {
-  asyncData: async ({ app, route, payload }) => ({
-    post: await app.$content('/').get(route.path) || payload
+  asyncData: async ({ app, route }) => ({
+    post: await app.$content('/wholesome/recipes').get('/wholesome/recipes/' + route.params.section + '/' + route.params.slug)
   })
 }
 </script>
