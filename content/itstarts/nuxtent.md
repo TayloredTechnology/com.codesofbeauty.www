@@ -2,4 +2,4 @@
 title: Nuxtent
 ---
 
-...is awesome!
+...is awesome to redux!

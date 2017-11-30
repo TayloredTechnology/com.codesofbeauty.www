@@ -3,7 +3,7 @@ module.exports = {
 	 ** Headers of the page
 	 */
 	head: {
-		title: 'imortal nutrition',
+		title: 'Codes of Beauty',
 		meta: [ {
 				charset: 'utf-8'
 			},
@@ -58,18 +58,19 @@ module.exports = {
 				branch: 'master'
 			},
 			publish_mode: 'editorial_workflow',
-			media_folder: 'content/images',
+			media_folder: 'assets',
+			public_folder: '_nuxt/img',
 			collections: [ {
-				name: 'blog',
-				label: 'Blog',
-				folder: 'content',
+				name: 'wholeness/recipes/australian',
+				label: 'Australian Recipes',
+				folder: 'content/recipes/australian',
 				create: true,
 				slug: '{{slug}}',
 				fields: [ {
 						label: 'Layout',
 						name: 'layout',
 						widget: 'hidden',
-						default: 'blog'
+						default: 'recipe'
 					},
 					{
 						label: 'Title',
