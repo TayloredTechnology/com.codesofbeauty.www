@@ -4,7 +4,7 @@
 module.exports = {
 	content: [
 		[ 'wholesome/recipes', {
-			// page: '/wholesome/_section/_slug',
+			page: '/wholesome/recipes/_section/_slug',
 			permalink: ':section/:slug',
 			isPost: false,
 			anchorLevel: 3,
@@ -13,7 +13,7 @@ module.exports = {
 			]
 		} ],
 		[ 'itstarts', {
-			// page: '/itstarts/_section/_slug',
+			page: '/itstarts/_section/_slug',
 			permalink: ':section/:slug',
 			isPost: false,
 			anchorLevel: 3,
