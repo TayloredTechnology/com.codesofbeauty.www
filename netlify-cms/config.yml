@@ -21,18 +21,29 @@ collections:
       - {label: 'Description', name: 'description', widget: 'string'}
       - label: 'Essential Images'
         name: 'keyImages'
-        widget: 'list'
+        widget: 'object'
         fields:
           - {label: 'Image: Featured', name: 'featured', widget: 'image'}
           - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
-      - {label: 'ingredients', name: 'ingredients', widget: 'markdown'}
+      - label: 'ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        fields:
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Quantity', name: 'quantity', widget: 'number'}
+          - {label: 'Measurement', name: 'measurement', widget: 'string'}
       - label: 'Times'
         name: 'times'
-        widget: 'list'
+        widget: 'object'
         fields:
           - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
           - {label: 'Cooking', name: 'cooking', widget: 'number'}
           - {label: 'Plating', name: 'plating', widget: 'number'}
-      - {label: 'Instructions', name: 'instructions', widget: 'markdown'}
+      - label: 'Instructions'
+        name: 'instructions'
+        widget: 'list'
+        fields:
+          - {label: 'Component', name: 'component', widget: 'string'}
+          - {label: 'Steps', name: 'steps', widget: 'markdown', default: '- instruction\n- another instruction'}
       - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
       - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
