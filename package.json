@@ -1,39 +1,34 @@
 {
-  "name": "com.imortalnutrition.www",
-  "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "Keidrych <keidrych@tayloredtechnology.net>",
-  "private": true,
-  "scripts": {
-    "dev": "cross-env HOST=0.0.0.0 nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "@nuxtjs/axios": "^4.5.0",
-    "netlify-cms": "^0.7.6",
-    "nuxt": "^1.0.0-rc11",
-    "nuxt-netlify-cms": "^2.0.1",
-    "nuxtent": "^1.1.0",
-    "react": "^15.5.0",
-    "slate": "^0.30.6"
-  },
-  "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "cross-env": "^5.1.1",
-    "eslint": "^4.3.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "express": "^4.16.2",
-    "netlify-cms": "^0.7.6",
-    "nuxt-netlify-cms": "^2.0.1"
-  }
+	"name": "Codes-of-Beauty",
+	"version": "1.0.0",
+	"description": "Root website for Codes of Beauty Project",
+	"author": "Keidrych <keidrych@tayloredtechnology.net>",
+	"private": true,
+	"scripts": {
+		"dev": "cross-env HOST=0.0.0.0 nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"precommit": "npm run lint"
+	},
+	"dependencies": {
+		"netlify-cms": "^0.7.6",
+		"nuxt": "latest",
+		"nuxtent": "latest",
+		"@nuxtjs/axios": "^4.5.0"
+	},
+	"devDependencies": {
+		"babel-eslint": "^7.2.3",
+		"cross-env": "^5.1.1",
+		"eslint": "^4.3.0",
+		"eslint-config-standard": "^10.2.1",
+		"eslint-loader": "^1.9.0",
+		"eslint-plugin-html": "^3.1.1",
+		"eslint-plugin-import": "^2.7.0",
+		"eslint-plugin-node": "^5.1.1",
+		"eslint-plugin-promise": "^3.5.0",
+		"eslint-plugin-standard": "^3.0.1",
+		"nuxt-netlify-cms": "^2.0.1"
+	}
 }

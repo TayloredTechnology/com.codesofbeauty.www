@@ -1,6 +1,6 @@
-# com.imortalnutrition.www
+# vue_cmsify
 
-> Nuxt.js project
+> Template for building Vue CMS projects w/ Nuxt + Nuxntent + Netlify
 
 ## Build Setup
 
