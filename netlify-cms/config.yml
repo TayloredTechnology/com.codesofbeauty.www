@@ -19,12 +19,16 @@ collections:
       - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Description', name: 'description', widget: 'string'}
-      - keyImages:
+      - label: 'Essential Images'
+        name: 'keyImages'
+        widget: 'list'
         fields:
           - {label: 'Image: Featured', name: 'featured', widget: 'image'}
           - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
       - {label: 'ingredients', name: 'ingredients', widget: 'markdown'}
-      - times:
+      - label: 'Times'
+        name: 'times'
+        widget: 'list'
         fields:
           - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
           - {label: 'Cooking', name: 'cooking', widget: 'number'}
