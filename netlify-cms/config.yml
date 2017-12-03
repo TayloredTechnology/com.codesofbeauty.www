@@ -9,8 +9,8 @@ publish_mode: editorial_workflow
 media_folder: "static/uploads"
 
 collections:
-  - name: 'wholesome/recipes/australian'
-    label: 'Australian Recipes'
+  - name: 'wholesome'
+    label: 'Wholesome Recipes'
     folder: 'content/wholesome/recipes/australian'
     create: true
     slug: '{{slug}}'
