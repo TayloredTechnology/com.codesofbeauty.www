@@ -9,9 +9,282 @@ publish_mode: editorial_workflow
 media_folder: "static/uploads"
 
 collections:
-  - name: 'wholesome'
-    label: 'Wholesome Australian'
-    folder: 'content/wholesome/recipes/australian'
+  - name: 'wholesome-african'
+    label: 'Wholesome: African'
+    folder: 'content/wholesome/recipes/african'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', name: 'description', widget: 'string'}
+      - label: 'Essential Images'
+        name: 'keyImages'
+        widget: 'object'
+        fields:
+          - {label: 'Image: Featured', name: 'featured', widget: 'image'}
+          - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
+      - label: 'ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        fields:
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Quantity', name: 'quantity', widget: 'number'}
+          - {label: 'Measurement', name: 'measurement', widget: 'string'}
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'string'}
+      - label: 'Times'
+        name: 'times'
+        widget: 'object'
+        fields:
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
+          - {label: 'Cooking', name: 'cooking', widget: 'number'}
+          - {label: 'Plating', name: 'plating', widget: 'number'}
+      - label: 'Instructions'
+        name: 'instructions'
+        widget: 'list'
+        fields:
+          - {label: 'Component', name: 'component', widget: 'string'}
+          - {label: 'Steps', name: 'steps', widget: 'markdown', default: '- instruction\n- another instruction'}
+      - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
+      - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
+  - name: 'wholesome-asian'
+    label: 'Wholesome: Asian'
+    folder: 'content/wholesome/recipes/asian'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', name: 'description', widget: 'string'}
+      - label: 'Essential Images'
+        name: 'keyImages'
+        widget: 'object'
+        fields:
+          - {label: 'Image: Featured', name: 'featured', widget: 'image'}
+          - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
+      - label: 'ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        fields:
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Quantity', name: 'quantity', widget: 'number'}
+          - {label: 'Measurement', name: 'measurement', widget: 'string'}
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'string'}
+      - label: 'Times'
+        name: 'times'
+        widget: 'object'
+        fields:
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
+          - {label: 'Cooking', name: 'cooking', widget: 'number'}
+          - {label: 'Plating', name: 'plating', widget: 'number'}
+      - label: 'Instructions'
+        name: 'instructions'
+        widget: 'list'
+        fields:
+          - {label: 'Component', name: 'component', widget: 'string'}
+          - {label: 'Steps', name: 'steps', widget: 'markdown', default: '- instruction\n- another instruction'}
+      - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
+      - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
+  - name: 'wholesome-european'
+    label: 'Wholesome: European'
+    folder: 'content/wholesome/recipes/european'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', name: 'description', widget: 'string'}
+      - label: 'Essential Images'
+        name: 'keyImages'
+        widget: 'object'
+        fields:
+          - {label: 'Image: Featured', name: 'featured', widget: 'image'}
+          - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
+      - label: 'ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        fields:
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Quantity', name: 'quantity', widget: 'number'}
+          - {label: 'Measurement', name: 'measurement', widget: 'string'}
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'string'}
+      - label: 'Times'
+        name: 'times'
+        widget: 'object'
+        fields:
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
+          - {label: 'Cooking', name: 'cooking', widget: 'number'}
+          - {label: 'Plating', name: 'plating', widget: 'number'}
+      - label: 'Instructions'
+        name: 'instructions'
+        widget: 'list'
+        fields:
+          - {label: 'Component', name: 'component', widget: 'string'}
+          - {label: 'Steps', name: 'steps', widget: 'markdown', default: '- instruction\n- another instruction'}
+      - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
+      - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
+  - name: 'wholesome-middle-american'
+    label: 'Wholesome: Middle American'
+    folder: 'content/wholesome/recipes/middle-american'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', name: 'description', widget: 'string'}
+      - label: 'Essential Images'
+        name: 'keyImages'
+        widget: 'object'
+        fields:
+          - {label: 'Image: Featured', name: 'featured', widget: 'image'}
+          - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
+      - label: 'ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        fields:
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Quantity', name: 'quantity', widget: 'number'}
+          - {label: 'Measurement', name: 'measurement', widget: 'string'}
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'string'}
+      - label: 'Times'
+        name: 'times'
+        widget: 'object'
+        fields:
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
+          - {label: 'Cooking', name: 'cooking', widget: 'number'}
+          - {label: 'Plating', name: 'plating', widget: 'number'}
+      - label: 'Instructions'
+        name: 'instructions'
+        widget: 'list'
+        fields:
+          - {label: 'Component', name: 'component', widget: 'string'}
+          - {label: 'Steps', name: 'steps', widget: 'markdown', default: '- instruction\n- another instruction'}
+      - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
+      - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
+  - name: 'wholesome-middle-east'
+    label: 'Wholesome: Middle East'
+    folder: 'content/wholesome/recipes/middle-east'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', name: 'description', widget: 'string'}
+      - label: 'Essential Images'
+        name: 'keyImages'
+        widget: 'object'
+        fields:
+          - {label: 'Image: Featured', name: 'featured', widget: 'image'}
+          - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
+      - label: 'ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        fields:
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Quantity', name: 'quantity', widget: 'number'}
+          - {label: 'Measurement', name: 'measurement', widget: 'string'}
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'string'}
+      - label: 'Times'
+        name: 'times'
+        widget: 'object'
+        fields:
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
+          - {label: 'Cooking', name: 'cooking', widget: 'number'}
+          - {label: 'Plating', name: 'plating', widget: 'number'}
+      - label: 'Instructions'
+        name: 'instructions'
+        widget: 'list'
+        fields:
+          - {label: 'Component', name: 'component', widget: 'string'}
+          - {label: 'Steps', name: 'steps', widget: 'markdown', default: '- instruction\n- another instruction'}
+      - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
+      - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
+  - name: 'wholesome-north-american'
+    label: 'Wholesome: North American'
+    folder: 'content/wholesome/recipes/north-american'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', name: 'description', widget: 'string'}
+      - label: 'Essential Images'
+        name: 'keyImages'
+        widget: 'object'
+        fields:
+          - {label: 'Image: Featured', name: 'featured', widget: 'image'}
+          - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
+      - label: 'ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        fields:
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Quantity', name: 'quantity', widget: 'number'}
+          - {label: 'Measurement', name: 'measurement', widget: 'string'}
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'string'}
+      - label: 'Times'
+        name: 'times'
+        widget: 'object'
+        fields:
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
+          - {label: 'Cooking', name: 'cooking', widget: 'number'}
+          - {label: 'Plating', name: 'plating', widget: 'number'}
+      - label: 'Instructions'
+        name: 'instructions'
+        widget: 'list'
+        fields:
+          - {label: 'Component', name: 'component', widget: 'string'}
+          - {label: 'Steps', name: 'steps', widget: 'markdown', default: '- instruction\n- another instruction'}
+      - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
+      - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
+  - name: 'wholesome-oceanic'
+    label: 'Wholesome: Oceanic'
+    folder: 'content/wholesome/recipes/oceanic'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Description', name: 'description', widget: 'string'}
+      - label: 'Essential Images'
+        name: 'keyImages'
+        widget: 'object'
+        fields:
+          - {label: 'Image: Featured', name: 'featured', widget: 'image'}
+          - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
+      - label: 'ingredients'
+        name: 'ingredients'
+        widget: 'list'
+        fields:
+          - {label: 'Name', name: 'name', widget: 'string'}
+          - {label: 'Quantity', name: 'quantity', widget: 'number'}
+          - {label: 'Measurement', name: 'measurement', widget: 'string'}
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'string'}
+      - label: 'Times'
+        name: 'times'
+        widget: 'object'
+        fields:
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
+          - {label: 'Cooking', name: 'cooking', widget: 'number'}
+          - {label: 'Plating', name: 'plating', widget: 'number'}
+      - label: 'Instructions'
+        name: 'instructions'
+        widget: 'list'
+        fields:
+          - {label: 'Component', name: 'component', widget: 'string'}
+          - {label: 'Steps', name: 'steps', widget: 'markdown', default: '- instruction\n- another instruction'}
+      - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
+      - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
+  - name: 'wholesome-south-american'
+    label: 'Wholesome: South American'
+    folder: 'content/wholesome/recipes/south-american'
     create: true
     slug: '{{slug}}'
     fields:
