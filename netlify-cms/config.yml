@@ -32,6 +32,7 @@ collections:
           - {label: 'Name', name: 'name', widget: 'string'}
           - {label: 'Quantity', name: 'quantity', widget: 'number'}
           - {label: 'Measurement', name: 'measurement', widget: 'string'}
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'string'}
       - label: 'Times'
         name: 'times'
         widget: 'object'
