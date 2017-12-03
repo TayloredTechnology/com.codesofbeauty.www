@@ -1,5 +1,20 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: TayloredTechnology/com.codesofbeauty.www
 publish_mode: editorial_workflow
-media_folder: "content/images"
+
+media_folder: "static/uploads"
+
+collections:
+  - name: 'wholeness/recipes/australian'
+    label: 'Australian Recipes'
+    folder: 'content/recipes/australian'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {label: 'Featured Image', name: 'thumbnail', widget: 'image'}
+      - {label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}

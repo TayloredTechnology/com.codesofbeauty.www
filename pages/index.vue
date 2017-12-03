@@ -1,21 +1,21 @@
 <template>
-  <section class="container">
+  <section class='container'>
     <div>
       <logo/>
-      <h1 class="title">
+      <h1 class='title'>
         com.imortalnutrition.www
       </h1>
-      <h2 class="subtitle">
+      <h2 class='subtitle'>
         Nuxt.js project
       </h2>
-      <h2 class="slogan">
+      <h2 class='slogan'>
         Seamlessly use content files in your Nuxt.js sites.
       </h2>
-      <div class="links">
-        <nuxt-link to="/hello-world" class="button--green">See Your First Post</nuxt-link>
-        <a href="https://github.com/nuxt-community/content-module" target="_blank" class="button--grey">Learn More on Github</a>
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+      <div class='links'>
+        <nuxt-link to='/hello-world' class='button--green'>See Your First Post</nuxt-link>
+        <a href='https://github.com/nuxt-community/content-module' target='_blank' class='button--grey'>Learn More on Github</a>
+        <a href='https://nuxtjs.org/' target='_blank' class='button--green'>Documentation</a>
+        <a href='https://github.com/nuxt/nuxt.js' target='_blank' class='button--grey'>GitHub</a>
       </div>
     </div>
   </section>
@@ -27,6 +27,23 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  // },
+  // created () {
+  //   if (process.browser) {
+  //     let netlifyCmsScript = document.createElement('script')
+  //     netlifyCmsScript.setAttribute('src', 'https://identity.netlify.com/v1/netlify-identity-widget.js')
+  //     document.head.appendChild(netlifyCmsScript)
+  //
+  //     if (window.netlifyIdentity) {
+  //       window.netlifyIdentity.on('init', user => {
+  //         if (!user) {
+  //           window.netlifyIdentity.on('login', () => {
+  //             document.location.href = '/cms/'
+  //           })
+  //         }
+  //       })
+  //     }
+  //   }
   }
 }
 </script>
@@ -50,7 +67,7 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 100px;

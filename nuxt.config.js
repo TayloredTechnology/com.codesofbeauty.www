@@ -50,56 +50,56 @@ module.exports = {
 	modules: [
 		'nuxtent',
 		'nuxt-netlify-cms'
-	],
-	netlifyCms: {
-		cmsConfig: {
-			backend: {
-				name: 'git-gateway',
-				branch: 'master'
-			},
-			publish_mode: 'editorial_workflow',
-			media_folder: 'assets',
-			public_folder: '_nuxt/img',
-			collections: [ {
-				name: 'wholeness/recipes/australian',
-				label: 'Australian Recipes',
-				folder: 'content/recipes/australian',
-				create: true,
-				slug: '{{slug}}',
-				fields: [ {
-						label: 'Layout',
-						name: 'layout',
-						widget: 'hidden',
-						default: 'recipe'
-					},
-					{
-						label: 'Title',
-						name: 'title',
-						widget: 'string'
-					},
-					{
-						label: 'Publish Date',
-						name: 'date',
-						widget: 'datetime'
-					},
-					{
-						label: 'Featured Image',
-						name: 'thumbnail',
-						widget: 'image'
-					},
-					{
-						label: 'Rating (scale of 1-5)',
-						name: 'rating',
-						widget: 'number'
-					},
-					{
-						label: 'Body',
-						name: 'body',
-						widget: 'markdown'
-					}
-				]
-			} ]
-		},
-		adminPath: 'cms'
-	}
+	]
+	// netlifyCms: {
+	// 	cmsConfig: {
+	// 		backend: {
+	// 			name: 'git-gateway',
+	// 			branch: 'master'
+	// 		},
+	// 		publish_mode: 'editorial_workflow',
+	// 		media_folder: 'assets',
+	// 		public_folder: 'dist/_nuxt/img',
+	// 		collections: [ {
+	// 			name: 'wholeness/recipes/australian',
+	// 			label: 'Australian Recipes',
+	// 			folder: 'content/recipes/australian',
+	// 			create: true,
+	// 			slug: '{{slug}}',
+	// 			fields: [ {
+	// 					label: 'Layout',
+	// 					name: 'layout',
+	// 					widget: 'hidden',
+	// 					default: 'recipe'
+	// 				},
+	// 				{
+	// 					label: 'Title',
+	// 					name: 'title',
+	// 					widget: 'string'
+	// 				},
+	// 				{
+	// 					label: 'Publish Date',
+	// 					name: 'date',
+	// 					widget: 'datetime'
+	// 				},
+	// 				{
+	// 					label: 'Featured Image',
+	// 					name: 'thumbnail',
+	// 					widget: 'image'
+	// 				},
+	// 				{
+	// 					label: 'Rating (scale of 1-5)',
+	// 					name: 'rating',
+	// 					widget: 'number'
+	// 				},
+	// 				{
+	// 					label: 'Body',
+	// 					name: 'body',
+	// 					widget: 'markdown'
+	// 				}
+	// 			]
+	// 		} ]
+	// 	},
+	// 	adminPath: 'cms'
+	// }
 }
