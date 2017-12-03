@@ -10,14 +10,25 @@ media_folder: "static/uploads"
 
 collections:
   - name: 'wholesome'
-    label: 'Wholesome Recipes'
+    label: 'Wholesome Australian'
     folder: 'content/wholesome/recipes/australian'
     create: true
     slug: '{{slug}}'
     fields:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'recipe'}
+      - {label: 'Culture', name: 'culture', widget: 'hidden', default: 'australian'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - {label: 'Featured Image', name: 'thumbnail', widget: 'image'}
-      - {label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number'}
-      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: 'Description', name: 'description', widget: 'string'}
+      - keyImages:
+        fields:
+          - {label: 'Image: Featured', name: 'featured', widget: 'image'}
+          - {label: 'Image: Mise En Place', name: 'miseenplace', widget: 'image'}
+      - {label: 'ingredients', name: 'ingredients', widget: 'markdown'}
+      - times:
+        fields:
+          - {label: 'Mise En Place', name: 'miseenplace', widget: 'number'}
+          - {label: 'Cooking', name: 'cooking', widget: 'number'}
+          - {label: 'Plating', name: 'plating', widget: 'number'}
+      - {label: 'Instructions', name: 'instructions', widget: 'markdown'}
+      - {label: 'Flavour Profile', name: 'flavourProfile', widget: 'markdown'}
+      - {label: 'Inspiring You', name: 'body', widget: 'markdown'}
